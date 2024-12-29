@@ -45,9 +45,10 @@ nav ul li a:hover {
     z-index: 1000;
     border-bottom: 3px solid rgba(35, 94, 232, 0.2); /* Thin, subtle border */
     width: 100%; /* Ensure the navbar spans the full width */
+    max-width: 1200px; /* Set a max-width for the navbar */
+    margin: 0 auto; /* Center the navbar horizontally */
     box-sizing: border-box;
     border-radius: 30px;
-    /* border-bottom-left-radius: 10px; */
     transition: padding 0.3s ease, height 0.3s ease; /* Smooth transition on resize */
 }
 
@@ -57,6 +58,7 @@ nav ul li a:hover {
     height: auto;
     position: relative; /* Use relative positioning */
     margin-left: 10px; /* Add some space from the left edge */
+    margin-right: 10px; /* Ensure space to the right as well */
     border-radius: 30px;
 }
 

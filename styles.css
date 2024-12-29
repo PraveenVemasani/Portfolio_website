@@ -139,7 +139,7 @@ nav ul li a:hover {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .banner {
-        height: 30vh; /* Reduce height for smaller screens */
+        height: 20vh; /* Reduce height for smaller screens */
     }
 }
 

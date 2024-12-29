@@ -128,7 +128,7 @@ nav ul li a:hover {
 /* Banner Section Styling */
 .banner {
     margin-top: 50px;
-    width: 100%; /* Full width */
+    width: 100%; /* Ensures the banner spans the full width */
     height: 100vh; /* Set the banner to take the full viewport height */
     background-image: url('images/banner2.png'); /* Replace with your image */
     background-size: cover; /* Ensures the image covers the full container */
@@ -137,6 +137,19 @@ nav ul li a:hover {
     display: flex; /* Flexbox for content positioning */
     align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+}
+
+/* Ensure that the image is not causing overflow */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Optional: You can try setting the body to a full-width container as well */
+body {
+    width: 100%;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -237,37 +250,43 @@ section h2 {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow when pressed */
 }
 
-
 /* Skills Section */
 #skills {
     background: #F5F5F5;
     margin: 20px auto;
     padding: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 800px; /* Keeps it centered with max width */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensures content inside the section is centered */
 }
 
+/* Heading styling */
 #skills h2 {
-    text-align: center;
     color: #007BFF;
     margin-bottom: 1rem;
 }
+
+/* Paragraph styling */
 #skills p {
     line-height: 1.6;
     color: #555; /* Softer text color for readability */
     margin-bottom: 1rem;
 }
 
+/* Style for the unordered list containing skills */
 #skills ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Centers the list items */
     gap: 15px;
+    padding-left: 0; /* Ensures no unwanted indentation */
+    margin: 0; /* Ensures no extra margin around the list */
 }
 
+/* Style for each skill item */
 #skills ul li {
     background: #007BFF;
     color: white;
@@ -275,13 +294,15 @@ section h2 {
     border-radius: 20px;
     font-size: 1.1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensures text is centered in each list item */
 }
 
+/* Hover effect for skills */
 #skills ul li:hover {
     background: #0056b3;
 }
 
-/* Style for headings (with the class "skill-head") */
+/* Style for skill headings */
 .skill-head {
     background: #FF6347; /* Solid background color */
     color: white; /* Font color */
@@ -303,15 +324,15 @@ section h2 {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
 }
 
-/* Ensure skill-head starts on a new line */
+/* Ensure skill-head starts on a new line and is centered */
 #skills ul li.skill-head {
     background: #FF6347; /* Same as skill-head for visual consistency */
     display: block; /* Forces a new line */
-    width: 100%; /* Optional: ensure it spans the width of its container */
-    text-align: center; /* Center the text inside */
+    width: 100%; /* Optional: ensures it spans the width of its container */
     margin-top: 20px; /* Add spacing above the heading */
     margin-bottom: 10px; /* Add spacing below the heading */
 }
+
 
 
 

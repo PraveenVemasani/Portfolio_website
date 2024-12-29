@@ -35,7 +35,7 @@ nav ul li a:hover {
 /* General NavBar Styles */
 .navbar {
     display: flex;
-    justify-content: center; /* Center the entire navbar */
+    justify-content: space-between; /* Center the entire navbar */
     align-items: center;
     padding: 2px 5px; /* Default padding for the navbar */
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black for sleekness */

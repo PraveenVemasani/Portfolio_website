@@ -473,10 +473,63 @@ section h2 {
     transform: translateY(-10px);
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Reduce font size and padding */
+    #education h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+        max-width: 80%;
+        font-size: 0.75em;
+    }
+
+    /* Adjust the timeline line position */
+    .timeline::before {
+        left: 50% !important;
+    }
+
+    /* Make timeline items and content more compact */
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        left: 0; /* Align the content vertically */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    /* Further reduce font size and margins */
+    #education h2 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .timeline-content {
+        padding: 10px;
+        max-width: 75%;
+        font-size: 0.70em;
+    }
+
+    .timeline-item {
+        margin-bottom: 15px;
+    }
+
+    /* Adjust timeline line position for small screens */
+    .timeline::before {
+        width: 2px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        left: 0; /* Center content */
+    }
 }
 
 

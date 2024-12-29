@@ -250,6 +250,8 @@ section h2 {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow when pressed */
 }
 
+
+
 /* Skills Section */
 #skills {
     background: #F5F5F5;
@@ -332,6 +334,49 @@ section h2 {
     margin-top: 20px; /* Add spacing above the heading */
     margin-bottom: 10px; /* Add spacing below the heading */
 }
+
+/* Responsive Design Adjustments */
+
+/* For medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+    #skills {
+        padding: 15px; /* Slightly reduced padding */
+    }
+
+    #skills ul li {
+        font-size: 1em; /* Slightly smaller text */
+        padding: 8px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .skill-head {
+        font-size: 1.2em; /* Adjust font size for headings */
+        padding: 12px 25px; /* Adjust padding */
+    }
+}
+
+/* For small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+    #skills {
+        padding: 10px; /* Even smaller padding */
+        width: 95%; /* Make the section take up more width on small screens */
+        max-width: none; /* Remove the max-width */
+    }
+
+    #skills h2 {
+        font-size: 1.5em; /* Larger heading for mobile devices */
+    }
+
+    #skills ul li {
+        font-size: 0.9em; /* Smaller font for smaller screens */
+        padding: 8px 12px; /* Smaller padding for compact screens */
+    }
+
+    .skill-head {
+        font-size: 1.1em; /* Smaller font size for headings on mobile */
+        padding: 10px 20px; /* Smaller padding for mobile */
+    }
+}
+
 
 
 

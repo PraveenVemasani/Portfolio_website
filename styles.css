@@ -50,7 +50,9 @@ nav ul li a:hover {
     border-radius: 30px;
     transition: padding 0.3s ease, height 0.3s ease; /* Smooth transition on resize */
 }
-
+.navbar a {
+    text-decoration: none; /* Removes underline */
+}
 /* Adjusted Logo Styles */
 .navbar .nav-logo {
     max-height: 50px; /* Default logo size */

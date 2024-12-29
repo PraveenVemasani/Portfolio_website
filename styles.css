@@ -46,8 +46,8 @@ nav ul li a:hover {
     border-bottom: 3px solid rgba(35, 94, 232, 0.2); /* Thin, subtle border */
     width: 100%; /* Ensure the navbar spans the full width */
     box-sizing: border-box;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 10px;
+    border-radius: 30px;
+    /* border-bottom-left-radius: 10px; */
     transition: padding 0.3s ease, height 0.3s ease; /* Smooth transition on resize */
 }
 
@@ -84,7 +84,7 @@ nav ul li a:hover {
 /* Responsive Styling */
 @media (max-width: 1024px) {
     .navbar {
-        padding: 8px 15px; /* Reduce padding */
+        padding: 8px 25px; /* Reduce padding */
     }
     .nav-logo {
         max-height: 42px; /* Slightly smaller logo */
@@ -110,7 +110,7 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 4px 8px; /* Minimal padding for very small screens */
+        padding: 4px 25px; /* Minimal padding for very small screens */
     }
     .nav-logo {
         max-height: 30px; /* Smaller logo size for very small screens */
